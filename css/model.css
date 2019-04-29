@@ -1,0 +1,130 @@
+:root{
+    --bgImage:url(https://www.cnblogs.com/images/cnblogs_com/sun123zxy/1413180/o_Youmu01.jpg);
+    --bgPosition:0% 30%;
+    --opacity:0.8;
+
+    --bgColor:#000;
+    --textColor:#fff;
+
+    --themeColor_Bg:#9c00ad;
+    --themeColor_Text:#dcbbff;
+}
+body{
+    background-image:var(--bgImage);
+    background-position:var(--bgPosition);
+    background-attachment: fixed;
+    background-size: cover;
+    opacity:var(--opacity);
+    color: var(--textColor)!important;
+}
+/*各种bg*/
+.well,.modal,.modal-footer,tbody, thead,.dropdown-menu,.pagination ul>li>a, .pagination ul>li>span, .msg_odd ,.msg_even, .mail-item{
+    background-color: var(--bgColor)!important;
+}
+/*复制输入/输出数据后的bg*/
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+    background-color: var(--bgColor)!important;
+}
+/*奇怪的表格*/
+.table-striped tbody>tr:nth-child(odd)>td, .table-striped tbody>tr:nth-child(odd)>th {
+    background-color: var(--bgColor)!important;
+}
+/*选中的页码*/
+.pagination ul>li>a:hover, .pagination ul>li>a:focus, .pagination ul>.active>a, .pagination ul>.active>span {
+    background-color: #f5f5f5!important;
+}
+/*非常规按钮*/
+.pager li>a, .pager li>span{
+    background-color: var(--bgColor)!important;
+}
+.pager li>a:hover, .pager li>a:focus {
+    background-color: gray!important;
+}
+/*按钮*/
+.btn{
+    background-image: linear-gradient(var(--bgColor),var(--bgColor) 5%,var(--bgColor))!important;
+    color:var(--textColor)!important;
+}
+.btn:hover:not(:active) {
+    background-color: #fff!important;
+}
+.btn:active{
+    background-image: none!important;
+}
+/*右上的两个按钮*/
+.dropdown-toggle, #btn_hide{
+    background-color:var(--bgColor)!important;
+}
+/*输入左边的色块*/
+.input-append .add-on, .input-prepend .add-on{
+    background-color: var(--bgColor)!important;
+}
+/*board内文字框*/
+pre {
+    background-color:var(--bgColor)!important;
+    color:var(--textColor)!important;
+    border: 1px solid #fff!important;
+}
+.prettyprint.linenums {
+    box-shadow: inset 40px 0 0 var(--bgColor), inset 41px 0 0 #ececf0 !important;
+}
+/*各种标题*/
+h1, h2, h3, h4, h5, h6 {
+    color: var(--textColor)!important;
+}
+/*各种文本框啊，输入之类的*/
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    background-color: var(--bgColor)!important;
+    color: var(--textColor)!important;
+}
+/*各种非主题色字*/
+.navbar .nav>li>a, .navbar .brand, .dropdown-menu>li>a{
+    color:var(--textColor)!important;
+}
+/*各种主题色字*/
+.problem-subtitle, a{
+    color: var(--themeColor_Text)!important;
+}
+/*未读邮件*/
+[style="background-color: #FCF8E3;"] {
+    background-color: var(--themeColor_Bg)!important;
+}
+[style="background-color: #FCF8E3;"] a {
+    color:var(--textColor)!important;
+}
+/*上侧悬浮栏*/
+.navbar-inner {
+    background-color: rgba(0,0,0,0)!important;
+    background-image: linear-gradient(to bottom,var(--bgColor),rgba(0,0,0,0))!important;
+    border: 1px solid rgba(0, 0, 0, 0)!important;
+}
+/*上侧悬浮栏-当前选项卡*/
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+    background-color: var(--themeColor_Bg)!important;
+}
+/*上侧悬浮栏-鼠标经过选项卡*/
+.navbar .nav>li>a:focus, .navbar .nav>li>a:hover{
+    background-color: var(--themeColor_Bg)!important;
+}
+/*右上下拉菜单-鼠标经过选项卡*/
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus, .dropdown-submenu:hover>a, .dropdown-submenu:focus>a{
+    background-color: rgba(0, 0, 0, 0)!important;
+    background-image: linear-gradient(to bottom,var(--themeColor_Bg),var(--themeColor_Bg))!important;
+}
+/*搜索框点击边框*/
+.navbar .search-query {
+    border: 1px solid var(--themeColor_Bg)!important;
+}
+/*一堆focus*/
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    border-color:var(--themeColor_Bg)!important;
+}
+.close {/*各种右上角关闭按钮x*/
+    color:var(--textColor)!important;
+}
+.caret {/*右上下拉菜单-倒三角形*/
+    border-top: 4px solid var(--textColor)!important;
+}
+rect{/*首页统计*/
+    fill:var(--bgColor)!important;
+}
