@@ -119,12 +119,24 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
     border-color:var(--themeColor_Bg)!important;
 }
-.close {/*各种右上角关闭按钮x*/
+/*各种右上角关闭按钮x*/
+.close {
     color:var(--textColor)!important;
 }
-.caret {/*右上下拉菜单-倒三角形*/
+/*右上下拉菜单-倒三角形*/
+.caret {
     border-top: 4px solid var(--textColor)!important;
 }
-rect{/*首页统计*/
+/*首页统计*/
+rect{
     fill:var(--bgColor)!important;
+}
+/*notes标题*/
+.panel-heading {
+    color: var(--textColor)!important;
+    background-color: var(--bgColor)!important;
+}
+/*notes主体*/
+.accordion-inner {
+    background-color: var(--bgColor)!important;
 }
