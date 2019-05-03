@@ -1,0 +1,1 @@
+console.log("successful loaded background.js")

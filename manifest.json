@@ -10,7 +10,7 @@
       "default_popup": "html/popup.html"
     },
     "background": {
-      "scripts": []
+      "scripts": ["js/background.js"]
     },
     "content_scripts": [{
       "matches": ["https://oj.bashu.com.cn/*"],
