@@ -1,10 +1,13 @@
 console.log("successful loaded popup.js")
 var bgPage = chrome.extension.getBackgroundPage();
-var confirm=document.getElementById("confirm");
 var shell=document.getElementById("settings");
 var settings=shell;
+var confirm=document.getElementById("confirm");
+var ip=document.getElementById("import");
+var ep=document.getElementById("export");
+var jsonInput=document.getElementById("jsonInput");
 
-function findINPUT(x,callBack){
+function findINPUT(x,callBack){//找到x中所有INPUT（遍历）
   if(x.tagName=='INPUT'){
     callBack(x);
   }
@@ -22,12 +25,25 @@ function refresh(){//读取缓存并填入settings中的INPUT
     x.value=bgPage.localStorage[id];
   });
 }
-
-refresh();
 confirm.onclick=function(){
-  findINPUT(settings,function(x){//遍历settings中的所有INPUT，存入缓存
+  findINPUT(settings,function(x){//将settings中的所有INPUT值存入缓存
     var id=x.getAttribute('id');
     bgPage.localStorage[id]=x.value;
-    console.log(id,x.value);
   });
+  console.log("successfully saved!");
 };
+ip.onclick=function(){/*导入JSON*/
+  var json = eval('('+jsonInput.value+')');
+  jsonInput.value="";
+  for(idx in json){
+    bgPage.localStorage[idx]=json[idx];
+  }
+  refresh();
+  console.log("successfully imported!");
+};
+ep.onclick=function(){/*导出JSON*/
+  jsonInput.value=JSON.stringify(bgPage.localStorage);
+  console.log("successfully exported!");
+};
+//-----Begin-----
+refresh();
