@@ -1,13 +1,13 @@
 :root{
-    --bgImage:url(https://www.cnblogs.com/images/cnblogs_com/sun123zxy/1413180/o_Youmu01.jpg);
-    --bgPosition:0% 30%;
-    --opacity:0.8;
+    --bgImage:linear-gradient(white,white);
+    --bgPosition:0% 0%;
+    --opacity:1;
 
-    --bgColor:#000;
-    --textColor:#fff;
+    --bgColor:white;
+    --textColor:black;
 
-    --themeColor_Bg:#9c00ad;
-    --themeColor_Text:#dcbbff;
+    --themeColor_Bg:#65c6ff;
+    --themeColor_Text:#2fa4e7;
 }
 body{
     background-image:var(--bgImage);
@@ -63,7 +63,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 pre {
     background-color:var(--bgColor)!important;
     color:var(--textColor)!important;
-    border: 1px solid #fff!important;
+    border: 1px solid var(--textColor)!important;
 }
 .prettyprint.linenums {
     box-shadow: inset 40px 0 0 var(--bgColor), inset 41px 0 0 #ececf0 !important;

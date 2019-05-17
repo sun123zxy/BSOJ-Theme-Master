@@ -2,8 +2,12 @@
     body{
         width: max-content;
     }
-    input {
+    input,table {
         width: -webkit-fill-available;
+    }
+    button {
+        float: right;
+        margin-left: 5px;
     }
 </style>
 <h1>BSOJ Theme Master</h1>
@@ -43,11 +47,13 @@
     </table>
 </div>
 <button id="confirm">Confirm</button>
+<button id="reset">Reset</button>
 <div>
-    <input id="jsonInput"></input>
-    <button id="import">import JSON</button>
-    <button id="export">Export JSON</button>
+    <input id="jsonInput" placeholder="JSON here"></input>
+    <button id="export">Export</button>
+    <button id="import">Import</button>
 </div>
+<br>
 <p>Refresh the page to load the settings</p>
 <p>Made by sun123zxy</p>
 
