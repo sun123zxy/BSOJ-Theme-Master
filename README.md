@@ -8,7 +8,7 @@ Made by sun123zxy
 
 ### How to Install
 
-少女祈祷中...
+目前暂时没有提供crx文件，请自行利用Chrome的开发者模式打包运行
 
 ### How to Set Up
 
@@ -27,6 +27,7 @@ PS：这些变量值将会原封不动的写入注入页面的css中，所以有
 |textColor| 普通字体颜色 | {color} |
 |themeColor_Bg| 主题板块背景颜色 | {color} |
 |themeColor_Text| 主题字体颜色 | {color} |
+
 x1：{}表示需要自己填的部分（不包括大括号）
 
 x2：{color}可以直接填颜色的名称，也可以输入16进制颜色码，详细语法参考css
