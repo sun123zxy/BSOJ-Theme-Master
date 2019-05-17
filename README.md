@@ -1,6 +1,6 @@
 # BSOJ Theme Master
 
-A Chrome extension to change styles on BSOJ
+A Chrome extension to manage themes on BSOJ
 
 Made by sun123zxy
 
