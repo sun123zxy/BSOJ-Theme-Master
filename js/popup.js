@@ -33,7 +33,7 @@ confirm.onclick=function(){
   console.log("successfully saved!");
 };
 ip.onclick=function(){/*导入JSON*/
-  var json = eval('('+jsonInput.value+')');
+  var json = JSON.parse(jsonInput.value);
   jsonInput.value="";
   for(idx in json){
     bgPage.localStorage[idx]=json[idx];
