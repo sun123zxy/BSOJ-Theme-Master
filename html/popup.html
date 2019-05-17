@@ -1,6 +1,60 @@
-<html>
-  <body>
-    <h1>BSOJ Theme Master</h1>
-    <p>Made by sun123zxy</p>
-  </body>
-</html>
+<style>
+    body{
+        width: max-content;
+    }
+    input,table {
+        width: -webkit-fill-available;
+    }
+    button {
+        float: right;
+        margin-left: 5px;
+    }
+</style>
+<h1>BSOJ Theme Master</h1>
+<h2>Settings</h2>
+<div id="settings">
+    <table border="1">
+        <tr>
+            <td><p>bgImage:</p></td>
+            <td><input id="style_bgImage"></input></td>
+        </tr>
+        <tr>
+            <td><p>bgPosition:</p></td>
+            <td><input id="style_bgPosition"></input></td>
+        </tr>
+        <tr>
+            <td><p>opacity:</p></td>
+            <td><input id="style_opacity"></input></td>
+        </tr>
+
+        <tr>
+            <td><p>bgColor:</p></td>
+            <td><input id="style_bgColor"></input></td>
+        </tr>
+        <tr>
+            <td><p>textColor:</p></td>
+            <td><input id="style_textColor"></input></td>
+        </tr>
+
+        <tr>
+            <td><p>themeColor_Bg:</p></td>
+            <td><input id="style_themeColor_Bg"></input></td>
+        </tr>
+        <tr>
+            <td><p>themeColor_Text:</p></td>
+            <td><input id="style_themeColor_Text"></input></td>
+        </tr>
+    </table>
+</div>
+<button id="confirm">Confirm</button>
+<button id="reset">Reset</button>
+<div>
+    <input id="jsonInput" placeholder="JSON here"></input>
+    <button id="export">Export</button>
+    <button id="import">Import</button>
+</div>
+<br>
+<p>Refresh the page to load the settings</p>
+<p>Made by sun123zxy</p>
+
+<script src="/js/popup.js"></script>

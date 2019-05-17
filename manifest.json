@@ -5,16 +5,17 @@
     "description": "Set themes you want on BSOJ!", 
 
     "browser_action": {
-      "default_icon": "pic/icon.png" ,
+      "default_icon": "/pic/icon.png" ,
       "default_title": "BSOJ Theme Master",
       "default_popup": "html/popup.html"
     },
     "background": {
-      "scripts": []
+      "scripts": ["/js/background.js"]
     },
     "content_scripts": [{
       "matches": ["https://oj.bashu.com.cn/*"],
-      "css": ["css/model.css"],
-      "js": []
-    }]
+      "js": ["/js/styleManager.js"],
+      "css": ["/css/model.css"]
+    }],
+    "permissions": []
 } 
