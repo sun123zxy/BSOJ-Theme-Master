@@ -14,7 +14,7 @@ Made by sun123zxy
 
 ### How to Install
 
-因为Chrome现在不允许加载非网上应用店的扩展了，所以请自行利用Chrome的开发者模式载入运行
+因为Chrome现在不允许加载非网上应用店的扩展，所以请自行利用Chrome的开发者模式载入运行
 
 ### How to Set Up
 
