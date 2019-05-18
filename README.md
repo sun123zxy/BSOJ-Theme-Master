@@ -2,11 +2,13 @@
 
 A Chrome extension to manage themes on BSOJ
 
-Preview(reimuAndMarisa.json):
+Made by sun123zxy
+
+##Preview:
 
 ![/pic/preview.jpg](/pic/preview.jpg)
 
-Made by sun123zxy
+(Theme:`reimuAndMarisa.json`)
 
 ## How to Use
 
