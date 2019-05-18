@@ -4,7 +4,7 @@ A Chrome extension to manage themes on BSOJ
 
 Made by sun123zxy
 
-##Preview:
+## Preview:
 
 ![/pic/preview.jpg](/pic/preview.jpg)
 
