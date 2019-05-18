@@ -4,11 +4,17 @@ A Chrome extension to manage themes on BSOJ
 
 Made by sun123zxy
 
+## Preview:
+
+![/pic/preview.jpg](/pic/preview.jpg)
+
+(Theme:`reimuAndMarisa.json`)
+
 ## How to Use
 
 ### How to Install
 
-因为Chrome现在不允许加载非网上应用店的扩展了，所以请自行利用Chrome的开发者模式载入运行
+因为Chrome现在不允许加载非网上应用店的扩展，所以请自行利用Chrome的开发者模式载入运行
 
 ### How to Set Up
 
