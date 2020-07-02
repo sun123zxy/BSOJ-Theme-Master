@@ -4,25 +4,21 @@ A Chrome extension to manage themes on BSOJ
 
 Made by sun123zxy
 
-## Preview:
+## Preview
 
-![/pic/preview.jpg](/pic/preview.jpg)
+暂缺
 
-(Theme:`reimuAndMarisa.json`)
+## Usage
 
-## How to Use
-
-### How to Install
+### Install
 
 因为Chrome现在不允许加载非网上应用店的扩展，所以请自行利用Chrome的开发者模式载入运行
 
-### How to Set Up
+### Set Up
 
 安装插件后点击右上角插件图标弹出设置界面。
 
-中央有一个大的表格，可以对其中的变量值进行任意更改
-
-PS：这些变量值将会原封不动的写入注入页面的css中，所以有基础的同学不必拘泥于给定语法，只要按照css的语法往里面写就行 : )
+跳出表格，可以对其中的变量值进行任意更改。这些变量值将会原封不动的写入注入页面的css中，所以有基础的同学不必拘泥于给定语法，只要按照css的语法往里面写就行 : )
 
 | Name | Description | Grammar |
 |-|-|-|
@@ -34,9 +30,11 @@ PS：这些变量值将会原封不动的写入注入页面的css中，所以有
 |themeColor_Bg| 主题板块背景颜色 | `{color}` |
 |themeColor_Text| 主题字体颜色 | `{color}` |
 
-x1：`{}`表示需要自己填的部分（不包括大括号）
+x1: `{}`表示需要自己填的部分（不包括大括号）
 
-x2：`{color}`可以直接填颜色的名称，也可以输入16进制颜色码，详细语法参考css
+x2: `{color}`可以直接填颜色的名称，也可以输入16进制颜色码，详细语法参考css
+
+x3: 要纯色背景，请参考`\exampleJson\nightMode.json`是怎么处理`bgImage`的
 
 更改完成后点击Confirm保存修改。
 
@@ -52,8 +50,12 @@ x2：`{color}`可以直接填颜色的名称，也可以输入16进制颜色码�
 
 可参见`/exampleJson`下的示例JSON
 
-### Notice (Upd 2019/07/17)
+## Q&A
 
-今天发现oj上一些题图背景是透明的，所以如果把背景设为与图中的字一样的颜色的话可能出现图片无法正常显示的问题，，，
+Q: 使用插件后有的题图无法正常显示
 
-换个背景或者把插件关了就行:p
+有些题图背景是透明的，如果你设的背景颜色和图中字的颜色一样的话你就分不清了
+
+Q: 默认配置好瞎眼
+
+确实瞎眼。请自行调整或使用 `\exampleJson\nightMode.json` 
