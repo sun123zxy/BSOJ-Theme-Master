@@ -140,3 +140,8 @@ rect{
 .accordion-inner {
     background-color: var(--bgColor)!important;
 }
+
+/*table hover color*/
+.table-hover tbody tr:hover>td, .table-hover tbody tr:hover>th {
+    background-color: var(--themeColor_Bg)!important;
+}
