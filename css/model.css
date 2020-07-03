@@ -1,13 +1,13 @@
 :root{
-    --bgImage:linear-gradient(white,white);
+    --bgImage:linear-gradient(#f1f1f1,#f1f1f1);
     --bgPosition:0% 0%;
     --opacity:1;
 
-    --bgColor:white;
-    --textColor:black;
+    --bgColor:#e8e8e8;
+    --textColor:#444;
 
-    --themeColor_Bg:#65c6ff;
-    --themeColor_Text:#2fa4e7;
+    --themeColor_Bg:#f3f3f3;
+    --themeColor_Text:black;
 }
 body{
     background-image:var(--bgImage);

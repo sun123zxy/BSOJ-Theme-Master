@@ -55,7 +55,3 @@ x3: 要纯色背景，请参考`\exampleJson\nightMode.json`是怎么处理`bgIm
 Q: 使用插件后有的题图无法正常显示
 
 有些题图背景是透明的，如果你设的背景颜色和图中字的颜色一样的话你就分不清了
-
-Q: 默认配置好瞎眼
-
-确实瞎眼。请自行调整或使用 `\exampleJson\nightMode.json` 
