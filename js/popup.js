@@ -1,5 +1,4 @@
 console.log("successful loaded popup.js")
-var bgPage = chrome.extension.getBackgroundPage();
 var shell=document.getElementById("settings");
 var settings=shell;
 var confirm=document.getElementById("confirm");
@@ -23,35 +22,42 @@ function findINPUT(x,callBack){//找到x中所有INPUT（遍历）
 function refresh(){//读取缓存并填入settings中的INPUT
   findINPUT(settings,function(x){
     var id=x.getAttribute('id');
-    x.value=bgPage.localStorage[id];
-    if(x.value=='undefined') x.value='';//防出现undefined后confirm导致css默认值失效
+    chrome.storage.local.get([id], function(item){
+      x.value=item[id];
+      if(x.value=='undefined') x.value='';//防出现undefined后confirm导致css默认值失效
+    })
   });
 }
 //-----Onclicks-----
-ip.onclick=function(){/*导入JSON*/
+
+ip.onclick=function(){//导入JSON
   var json = JSON.parse(jsonInput.value);
   jsonInput.value="";
-  for(idx in json){
-    bgPage.localStorage[idx]=json[idx];
-  }
-  refresh();
-  console.log("successfully imported!");
+
+  chrome.storage.local.set(json, function(){
+    refresh();
+    console.log("successfully set!");
+  });
 };
-ep.onclick=function(){/*导出JSON*/
-  jsonInput.value=JSON.stringify(bgPage.localStorage);
-  console.log("successfully exported!");
+ep.onclick=function(){//导出JSON
+  chrome.storage.local.get(null, function(item){
+    jsonInput.value=JSON.stringify(item);
+    console.log("successfully exported!");
+  });
 };
+
 confirm.onclick=function(){
   findINPUT(settings,function(x){//将settings中的所有INPUT值存入缓存
     var id=x.getAttribute('id');
-    bgPage.localStorage[id]=x.value;
+    var kv={};kv[id]=x.value;
+    chrome.storage.local.set(kv, function(){
+      console.log("successfully saved!");
+    });
   });
-  console.log("successfully saved!");
 };
 reset.onclick=function(){
-  bgPage.localStorage.clear();
+  chrome.storage.local.clear();
   refresh();
-  console.log("successfully reset!");
 }
 //-----Begin-----
 refresh();

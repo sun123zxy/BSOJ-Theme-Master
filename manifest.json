@@ -10,12 +10,14 @@
       "default_popup": "html/popup.html"
     },
     "background": {
-      "scripts": ["/js/background.js"]
+      "scripts": []
     },
     "content_scripts": [{
       "matches": ["https://oj.bashu.com.cn/*"],
       "js": ["/js/styleManager.js"],
       "css": ["/css/model.css"]
     }],
-    "permissions": []
+    "permissions": [
+      "storage"
+    ]
 } 
